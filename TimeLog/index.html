@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سجل الدوام</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🕒 سجل الدوام</h1>
+
+        <label>وقت الخروج</label>
+        <input type="time" id="outTime">
+
+        <label>وقت الدخول</label>
+        <input type="time" id="inTime">
+
+        <div class="buttons">
+
+            <button id="calc">
+                🧮 احسب
+            </button>
+
+            <button id="save">
+                💾 حفظ
+            </button>
+
+            <button id="clear">
+                🗑️ مسح الكل
+            </button>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="info">
+                <h3>المدة الحالية</h3>
+                <h2 id="duration">00:00</h2>
+            </div>
+
+            <div class="info">
+                <h3>الإجمالي</h3>
+                <h2 id="total">00:00</h2>
+            </div>
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>التاريخ</th>
+                    <th>الخروج</th>
+                    <th>الدخول</th>
+                    <th>المدة</th>
+                    <th>حذف</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tableBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
